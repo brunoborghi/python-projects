@@ -1,10 +1,12 @@
+import random
+
 print("*********************************")
 print("Bem vindo no jogo de Adivinhação!")
 print("*********************************")
 
 nome = input("Digite seu nome: ")
 
-numero_secreto = 28
+numero_secreto = random.randrange(1, 101)
 total_tentativas = 3
 
 for rodada in range(1, total_tentativas + 1):
